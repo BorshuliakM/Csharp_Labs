@@ -14,7 +14,7 @@ public class Antelope//Class describes Antelopas species
 
     public Antelope()//Constructor without parametres
     {
-        object_Count++
+        object_Count++;
     }
 
     public Antelope(string name, string group, string residance, int population)//Constructors with parametres

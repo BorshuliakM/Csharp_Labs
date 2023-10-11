@@ -2,7 +2,7 @@
 
 public static class ArrayExstensions
 {
-    public static int[] SortAsc(this int[] arr)
+    public static int[] SortAsc(this int[] arr) //1,1 по зростанню
     {
         for (int i = 1; i < arr.Length; i++)
         {
