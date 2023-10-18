@@ -1,5 +1,7 @@
 ﻿using Lab_1;
+using System.Text;
 
+Console.OutputEncoding = Encoding.UTF8;
 //Creating objects
 Antelope Jeiran = new ("Джейран", "А", "Азія", 30000);
 Antelope Gnu = new ("Гну", "В", "Африка", 560000);
