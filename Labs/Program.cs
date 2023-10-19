@@ -45,6 +45,6 @@ foreach (Antelope a in k)
 {
     a.Print();
 }
-
+Console.WriteLine("\n");
 ant.SpeciesCountLowerThan(12);
 
