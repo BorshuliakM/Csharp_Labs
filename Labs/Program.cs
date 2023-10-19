@@ -1,11 +1,14 @@
 ﻿using Lab_2;
+using System.Linq;
+using System.Text;
 
+Console.OutputEncoding = Encoding.UTF8;
 //1,1 
 int[] ints = new int[] { 1, 5, 4, 2, 3, 8, 4, 2, 1, 5, 6, 8, 9, 77, 11, 22 };
 ints.SortAsc();
 foreach (int i in ints)
 {
-    Console.WriteLine(i);
+    Console.Write(i+"  ");
 }
 Antelope Jeiran = new("Джейран", "А", "Азія", 30000);
 Antelope Gnu = new("Гну", "В", "Африка", 560000);
@@ -19,7 +22,7 @@ Antelope Fgh = new("Fgh", "Н", "Африка", 2700);
 Antelope Rty = new("Rty", "А", "Азія", 33000);
 Antelope bbb = new();
 //2.1
-Console.WriteLine(Antelope.GetCount());
+Console.WriteLine("\nКлькість антилоп = " + Antelope.GetCount());
 //2.3
 Antelops ant = new();
 ant.Add_Antelope(Jeiran);
@@ -33,7 +36,15 @@ ant.Add_Antelope(Kvb);
 ant.Add_Antelope(Fgh);
 ant.Add_Antelope(Rty);
 //2.4-2.5
-ant.SpeciesPopulationMin();
-ant.SpeciesPopulationLowerThan(5000);
-ant.SpeciesCountLowerThan(3);
+Console.WriteLine("\nВид з найменьшою популяцією");
+Antelope zzz = ant.SpeciesPopulationMin();
+zzz.Print();
+IEnumerable<Antelope> k = ant.SpeciesPopulationLowerThan(5000);
+Console.WriteLine("\nКількість антилоп меньше заданого числа:");
+foreach (Antelope a in k)
+{
+    a.Print();
+}
+
+ant.SpeciesCountLowerThan(12);
 
