@@ -4,8 +4,8 @@ public class User
 {
     protected string name;
     protected int age;
-    public User(string name,int age) 
-    { 
+    public User(string name, int age)
+    {
         this.name = name;
         this.age = age;
     }

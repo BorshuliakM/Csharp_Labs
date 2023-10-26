@@ -5,7 +5,7 @@ public class Worker : User
     public double Salary { get; set; }
     public Worker(string name, int age, double Salary) : base(name, age)
     {
-
+        this.Salary = Salary;
     }
 }
 
