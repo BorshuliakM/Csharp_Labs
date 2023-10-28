@@ -6,11 +6,11 @@ public enum DriverCategory
     B,
     C
 }
-public class Driver:Worker
+public class Driver : Worker
 {
     private int DriverExperienceYears;
     private DriverCategory category;
-    public Driver(string name, int age, double Salary, int DriverExperienceYears, DriverCategory category):base(name,age,Salary)
+    public Driver(string name, int age, double Salary, int DriverExperienceYears, DriverCategory category) : base(name, age, Salary)
     {
         this.age = age;
         this.name = name;

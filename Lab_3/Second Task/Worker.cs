@@ -7,5 +7,5 @@ public class Worker : User
     {
         this.Salary = Salary;
     }
+    public void Print() => Console.WriteLine($"Name = {name} Age = {age} Salary = {Salary}");
 }
-

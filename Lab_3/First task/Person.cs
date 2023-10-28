@@ -17,5 +17,5 @@ public class Person
         this.LastName = LastName;
         this.Age = Age;
     }
-    public void Greet() => Console.WriteLine($"Hi i'm {FirstName} {LastName}\nAge {Age}");
+    public void Greet() => Console.WriteLine($"Hi i'm {FirstName} {LastName} Age {Age}");
 }
