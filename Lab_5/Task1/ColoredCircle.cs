@@ -1,12 +1,14 @@
-﻿namespace Lab_5;
+﻿namespace Lab_5.Task1;
 
-public class Circle : IShape
+public class ColoredCircle : IColoredShape
 {
     public double Radius { get; set; }
+    public string Color { get; set; }
 
-    public Circle(double radius)
+    public ColoredCircle(double radius, string color)
     {
         Radius = radius;
+        Color = color;
     }
 
     public void PrintShapeType()
@@ -24,5 +26,10 @@ public class Circle : IShape
     {
         get { return Radius; }
         set { Radius = value; }
+    }
+
+    public void PrintColor()
+    {
+        Console.WriteLine($"Color: {Color}");
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Lab_5;
+﻿namespace Lab_5.Task1;
 
 public interface IShape
 {
