@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Lab_9;
+
+IntegralCalculator integralCalculator = new IntegralCalculator();
+
+IntegralCalculator.Function func = x => x * x;
+
+double a = 0; // Початкова точка інтервалу
+double b = 1; // Кінцева точка інтервалу
+int n = 1000; // Кількість трапецій
+
+double result = integralCalculator.CalculateIntegral(func, a, b, n);
+
+Console.WriteLine($"Значення інтеграла: {result}");
