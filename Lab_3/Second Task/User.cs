@@ -1,6 +1,6 @@
 ﻿namespace Lab_3.Second_Task;
 
-public class User
+public class User//Клас юзер із методами і полями відповідно до завдання
 {
     protected string name;
     protected int age;

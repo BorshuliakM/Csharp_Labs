@@ -1,6 +1,6 @@
 ﻿namespace Lab_3.Second_Task;
 
-public enum DriverCategory
+public enum DriverCategory //перечислення для категорій водіння
 {
     A,
     B,

@@ -1,6 +1,6 @@
 ﻿namespace Lab_3.First_Task;
 
-public class Person
+public class Person //Клас персон
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }

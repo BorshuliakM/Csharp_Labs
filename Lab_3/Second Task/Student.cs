@@ -1,6 +1,6 @@
 ﻿namespace Lab_3.Second_Task;
 
-public class Student : User
+public class Student : User 
 {
     private int scholarship { get; set; }
     private int grade { get; set; }
