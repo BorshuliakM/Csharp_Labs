@@ -2,18 +2,18 @@
 
 public class Text
 {
-    public string Title { get; set; }
-    public List<Sentence> Sentences { get; set; }
+    public string Title { get; set; }//Заголовок тексту
+    public List<Sentence> Sentences { get; set; }//Список речень
     public Text(string title)
     {
         Title = title;
         Sentences = new List<Sentence>();
     }
-    public void AddSentence(Sentence sentence)
+    public void AddSentence(Sentence sentence)//Додати речення
     {
         Sentences.Add(sentence);
     }
-    public void PrintText()
+    public void PrintText()//Друк тексту
     {
         Console.WriteLine($"Title: {Title}");
         foreach (var sentence in Sentences)
@@ -21,7 +21,7 @@ public class Text
             Console.WriteLine(sentence);
         }
     }
-    public override bool Equals(object obj)
+    public override bool Equals(object obj)//Метод порівняння
     {
         if (obj is Text otherText)
         {
@@ -30,7 +30,7 @@ public class Text
         }
         return false;
     }
-    public override int GetHashCode()
+    public override int GetHashCode()//Метод для повернення хешкоду екземпляру
     {
         int hash = 17;
         hash = hash * 23 + Title.ToLower().GetHashCode();
@@ -40,7 +40,7 @@ public class Text
         }
         return hash;
     }
-    public override string ToString()
+    public override string ToString() //Перевизначений метод тустрінг
     {
         return $"Title: {Title}\n{string.Join("\n", Sentences)}";
     }

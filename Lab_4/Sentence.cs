@@ -2,16 +2,16 @@
 
 public class Sentence
 {
-    public List<Word> Words { get; set; }
+    public List<Word> Words { get; set; }//Список слів
     public Sentence()
     {
         Words = new List<Word>();
     }
-    public void AddWord(Word word)
+    public void AddWord(Word word)//Додати слово до речення
     {
         Words.Add(word);
     }
-    public override bool Equals(object obj)
+    public override bool Equals(object obj)//Чи є щось реченням
     {
         if (obj is Sentence otherSentence)
         {
@@ -19,7 +19,7 @@ public class Sentence
         }
         return false;
     }
-    public override int GetHashCode()
+    public override int GetHashCode()//Хешкод
     {
         int hash = 17;
         foreach (var word in Words)
@@ -28,7 +28,7 @@ public class Sentence
         }
         return hash;
     }
-    public override string ToString()
+    public override string ToString()//Ту стрінг
     {
         return string.Join(" ", Words);
     }
