@@ -1,4 +1,5 @@
-﻿//Task 1
+﻿Console.OutputEncoding = System.Text.Encoding.UTF8; //localization
+//Task 1
 static string ReplaceZerosAndOnes(string input, int startPosition)
 {
     char[] chars = input.ToCharArray();
@@ -63,7 +64,7 @@ static void StrWithDate(string input)
     {
         Console.WriteLine(springDate.ToString("dd.MM.yyyy"));
     }
-    Console.WriteLine($"Сама пізніша дата: {latestDate.ToString("dd.MM.yyyy")}");
+    Console.WriteLine($"Найпізніша дата: {latestDate.ToString("dd.MM.yyyy")}");
 }
 string inp = "24.02.2022, 17.04.2023, 19.12.2023";
 StrWithDate(inp);
