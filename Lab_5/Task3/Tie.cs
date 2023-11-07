@@ -1,6 +1,6 @@
 ﻿namespace Lab_5.Task3;
 
-public class Tie : Clothing, MaleClothing
+public class Tie : Clothing, IMaleClothing
 {
     public Tie(ClothingSize size, decimal cost, string color) : base(size, cost, color)
     {

@@ -1,8 +1,8 @@
 ﻿namespace Lab_5.Task1;
 
-public interface IShape
+public interface IShape//інтерфейс абстрактної форми
 {
-    void PrintShapeType();
-    void PrintArea();
-    double FirstLinearDimension { get; set; }
+    void PrintShapeType();//Вивід типу форми
+    void PrintArea();//Вивід площі
+    double FirstLinearDimension { get; set; }//Перший лінійний вимір властивість
 }

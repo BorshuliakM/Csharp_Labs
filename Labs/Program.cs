@@ -56,14 +56,14 @@ Shop[] sizes = new Shop[]
             new Shop(ClothingSize.L, 40),
         };
 
-MaleClothing[] maleClothes = new MaleClothing[]
+IMaleClothing[] maleClothes = new IMaleClothing[]
 {
             new TShirt(ClothingSize.S, 25.0m, "Blue"),
             new Pants(ClothingSize.M, 40.0m, "Black"),
             new Tie(ClothingSize.L, 15.0m, "Red"),
 };
 
-FemaleClothing[] femaleClothes = new FemaleClothing[]
+IFemaleClothing[] femaleClothes = new IFemaleClothing[]
 {
             new TShirt(ClothingSize.XS, 20.0m, "Pink"),
             new Pants(ClothingSize.S, 35.0m, "Gray"),

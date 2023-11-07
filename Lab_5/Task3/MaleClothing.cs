@@ -1,6 +1,6 @@
 ﻿namespace Lab_5.Task3;
 
-public interface MaleClothing
+public interface IMaleClothing//Інтерфейс чоловічої одежі
 {
-    void DressMan();
+    void DressMan();//Метод вдягнути чоловіка
 }

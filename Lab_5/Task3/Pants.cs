@@ -1,6 +1,6 @@
 ﻿namespace Lab_5.Task3;
 
-public class Pants : Clothing, MaleClothing, FemaleClothing
+public class Pants : Clothing, IMaleClothing, IFemaleClothing
 {
     public Pants(ClothingSize size, decimal cost, string color) : base(size, cost, color)
     {

@@ -1,26 +1,26 @@
 ﻿namespace Lab_5.Task1;
 
-public class Circle : IShape
+public class Circle : IShape//Клас кругу, реалізує інтерфейс форми абстр
 {
-    public double Radius { get; set; }
+    public double Radius { get; set; }//Властивість радіус
 
-    public Circle(double radius)
+    public Circle(double radius)//Конструктор кругу
     {
         Radius = radius;
     }
 
-    public void PrintShapeType()
+    public void PrintShapeType()//Вивід форми
     {
         Console.WriteLine("Shape Type: Circle");
     }
 
-    public void PrintArea()
+    public void PrintArea()//Вивід площі на консоль
     {
         double area = Math.PI * Radius * Radius;
         Console.WriteLine($"Area: {area}");
     }
 
-    public double FirstLinearDimension
+    public double FirstLinearDimension//Повертає радіус
     {
         get { return Radius; }
         set { Radius = value; }

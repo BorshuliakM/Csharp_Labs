@@ -1,6 +1,6 @@
 ﻿namespace Lab_5.Task3;
 
-public enum ClothingSize
+public enum ClothingSize//Перечислення розмірів одежі
 {
     XXS,
     XS,
@@ -8,7 +8,7 @@ public enum ClothingSize
     M,
     L
 }
-public class Shop
+public class Shop//Клас магазинів
 {
     public ClothingSize Size { get; set; }
     public int EuroSize { get; set; }
@@ -18,5 +18,5 @@ public class Shop
         EuroSize = euroSize;
     }
 
-    public string getDescription() => Size == ClothingSize.XXS ? "Children size" : "Adult size";
+    public string getDescription() => Size == ClothingSize.XXS ? "Children size" : "Adult size";//Повернути опис
 }

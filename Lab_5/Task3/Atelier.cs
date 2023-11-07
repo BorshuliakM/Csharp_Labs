@@ -2,7 +2,7 @@
 
 public class Atelier
 {
-    public void DressWoman(FemaleClothing[] clothes)
+    public void DressWoman(IFemaleClothing[] clothes)//одягнути жінку
     {
         Console.WriteLine("Dressing Woman:");
         foreach (var item in clothes)
@@ -11,7 +11,7 @@ public class Atelier
         }
     }
 
-    public void DressMan(MaleClothing[] clothes)
+    public void DressMan(IMaleClothing[] clothes)//одягнути чоловіка
     {
         Console.WriteLine("Dressing Man:");
         foreach (var item in clothes)

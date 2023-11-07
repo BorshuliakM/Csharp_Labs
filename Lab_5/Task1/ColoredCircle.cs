@@ -1,9 +1,9 @@
 ﻿namespace Lab_5.Task1;
 
-public class ColoredCircle : IColoredShape
+public class ColoredCircle : IColoredShape//Кольоровий круг імплементує інтерфейс кольорової абстр форми
 {
     public double Radius { get; set; }
-    public string Color { get; set; }
+    public string Color { get; set; }//Властивість кольору
 
     public ColoredCircle(double radius, string color)
     {
@@ -11,12 +11,12 @@ public class ColoredCircle : IColoredShape
         Color = color;
     }
 
-    public void PrintShapeType()
+    public void PrintShapeType()//Прінт форми
     {
         Console.WriteLine("Shape Type: Circle");
     }
 
-    public void PrintArea()
+    public void PrintArea()//Прінт площі
     {
         double area = Math.PI * Radius * Radius;
         Console.WriteLine($"Area: {area}");
@@ -28,7 +28,7 @@ public class ColoredCircle : IColoredShape
         set { Radius = value; }
     }
 
-    public void PrintColor()
+    public void PrintColor()//Прінт кольору
     {
         Console.WriteLine($"Color: {Color}");
     }

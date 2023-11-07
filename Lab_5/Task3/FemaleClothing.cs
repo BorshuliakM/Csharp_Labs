@@ -1,6 +1,6 @@
 ﻿namespace Lab_5.Task3;
 
-public interface FemaleClothing
+public interface IFemaleClothing//Інтерфейс жіночої одежі
 {
-    void DressWoman();
+    void DressWoman();//Метод вдягнути жінку
 }
