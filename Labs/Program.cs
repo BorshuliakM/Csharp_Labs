@@ -1,6 +1,6 @@
 ﻿using System.IO;
 //Task 1
-static void CreateDir(string path)
+static void CreateDir(string path)//Створити диреторію
 {
     if (!Directory.Exists(path)) Directory.CreateDirectory(path);
 }
