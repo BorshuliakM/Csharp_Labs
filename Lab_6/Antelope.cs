@@ -1,6 +1,6 @@
 ﻿namespace Lab_6;
 
-public class Antelope : IComparable<Antelope>
+public class Antelope : IComparable<Antelope>//Клас антилопи який реалізує інтерфейс айкомперебл
 {
     public string Name { get; set; } = "";
     public string Group { get; set; } = "";
@@ -15,6 +15,6 @@ public class Antelope : IComparable<Antelope>
         this.Residance = Residance;
         this.Population = Population;
     }
-    public int CompareTo(Antelope other) => Population.CompareTo(other.Population);
+    public int CompareTo(Antelope other) => Population.CompareTo(other.Population);//Метод порівнняння одного об'єкту типу антилопи до іншого
     public void Print() => Console.WriteLine($"Назва = {Name}\nГрупа = {Group}\nЖитло = {Residance}\nЧисельнысть популяції = {Population}");//Print method
 }
