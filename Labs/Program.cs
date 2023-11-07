@@ -1,6 +1,6 @@
 ﻿Console.OutputEncoding = System.Text.Encoding.UTF8; //localization
 //Task 1
-static string ReplaceZerosAndOnes(string input, int startPosition)
+static string ReplaceZerosAndOnes(string input, int startPosition)//Метод який замінює нулі та одиниці
 {
     char[] chars = input.ToCharArray();
     for (int i = startPosition; i < input.Length; i++)
@@ -18,7 +18,7 @@ string result = ReplaceZerosAndOnes(input, startPosition);
 Console.WriteLine("Результат: " + result);
 
 //Task 2
-static void DayToDate(DateTime targetDate)
+static void DayToDate(DateTime targetDate)//Метод для перевірки днів до вказаної дати
 {
     DateTime currentDate = DateTime.Now;
 
@@ -36,7 +36,7 @@ DateTime Date = new DateTime(2023, 12, 19);
 DayToDate(Date);
 
 //Task 3
-static void StrWithDate(string input)
+static void StrWithDate(string input)//Метод відповідно до 3 завдання
 {
     string[] dateStrings = input.Split(',').Select(s => s.Trim()).ToArray();
 
