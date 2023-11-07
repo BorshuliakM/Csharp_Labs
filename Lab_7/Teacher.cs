@@ -1,10 +1,10 @@
 ﻿namespace Lab_7;
 
-public class Teacher
+public class Teacher//клас викладача
 {
-    public string FullName { get; set; }
-    public string Position { get; set; }
-    private decimal salary;
+    public string FullName { get; set; }//Повне ім'я
+    public string Position { get; set; }//Посада
+    private decimal salary;//Зп
 
     public Teacher(string FullName, string Position, decimal _salary)
     {
@@ -13,7 +13,7 @@ public class Teacher
         Salary = _salary;
     }
 
-    public decimal Salary
+    public decimal Salary//Властивість зп
     {
         get { return salary; }
         set
@@ -25,5 +25,5 @@ public class Teacher
             salary = value;
         }
     }
-    public virtual decimal CountSalary() => Salary;
+    public virtual decimal CountSalary() => Salary;//підрахунок зп віртуальний
 }
