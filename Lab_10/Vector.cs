@@ -1,8 +1,8 @@
 ﻿namespace Lab_10;
 
-class Vector
+public class Vector//Клас вектору
 {
-    private double[] values;
+    private double[] values;// за основу взято масив
 
     public Vector(int length)
     {
@@ -14,7 +14,7 @@ class Vector
         this.values = values;
     }
 
-    public int Length
+    public int Length//метод який повертає довжину
     {
         get { return values.Length; }
     }
@@ -25,7 +25,7 @@ class Vector
         set { values[index] = value; }
     }
 
-    public static Vector operator +(Vector v1, Vector v2)
+    public static Vector operator +(Vector v1, Vector v2)//перенавантажуєм оператор + (вектор + вектор)
     {
         if (v1.Length != v2.Length)
             throw new ArgumentException("Vectors must have the same length");
@@ -37,7 +37,7 @@ class Vector
         }
         return result;
     }
-    public static Vector operator +(Vector v, double number)
+    public static Vector operator +(Vector v, double number)//перенавантажуєм оператор + (вектор + число)
     {
         Vector result = new Vector(v.Length);
         for (int i = 0; i < v.Length; i++)
@@ -45,5 +45,12 @@ class Vector
             result[i] = v[i] + number;
         }
         return result;
+    }
+    public void Print()
+    {
+        foreach (double v in values)
+        {
+            Console.WriteLine(v.ToString());
+        }
     }
 }

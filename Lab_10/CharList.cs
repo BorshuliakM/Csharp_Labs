@@ -1,17 +1,17 @@
 ﻿namespace Lab_10;
 
-public class CharList
+public class CharList//Створення адт чарлісту
 {
     private List<char> elements = new List<char>();
-    public void Add(char element)
+    public void Add(char element)//Додаємо елемент до поля ліст
     {
         elements.Add(element);
     }
-    public void RemoveAt(int k)
+    public void RemoveAt(int k)//видаляємо конкретний елемент
     { 
         elements.RemoveAt(k); 
     }
-    public static CharList operator +(CharList left, CharList right)
+    public static CharList operator +(CharList left, CharList right)//перенавантажуєм оператор +
     {
         CharList newList = new CharList();
         foreach (char element in left.elements)
@@ -24,7 +24,7 @@ public class CharList
         }
         return newList;
     }
-    public static CharList operator --(CharList lst)
+    public static CharList operator --(CharList lst)//перенавантажуєм --
     {
         CharList newList = new CharList();
         foreach (char element in lst.elements)
@@ -34,7 +34,7 @@ public class CharList
         newList.RemoveAt(0);
         return newList;
     }
-    public static bool operator ==(CharList left, CharList right)
+    public static bool operator ==(CharList left, CharList right)//перенавантажуєм ==
     {
         if (ReferenceEquals(left, right))
             return true;
@@ -42,20 +42,27 @@ public class CharList
             return false;
         return left.elements.Equals(right.elements);
     }
-    public static bool operator !=(CharList left, CharList right)
+    public static bool operator !=(CharList left, CharList right)//перенавантажуєм !=
     {
         return !(left == right);
     }
 
-    public override bool Equals(object obj)
+    public override bool Equals(object obj)//метод порівняння
     {
         if (obj is CharList otherList)
             return this == otherList;
         return false;
     }
 
-    public override int GetHashCode()
+    public override int GetHashCode()//метод для повернення хеш коду екземпляру
     {
         return elements.GetHashCode();
+    }
+    public void Print()
+    {
+        foreach (char v in elements)
+        {
+            Console.WriteLine(v);
+        }
     }
 }
