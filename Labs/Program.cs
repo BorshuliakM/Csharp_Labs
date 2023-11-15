@@ -1,8 +1,9 @@
 ﻿using Lab_9;
 
+//task 1
 IntegralCalculator integralCalculator = new IntegralCalculator();
 
-IntegralCalculator.Function func = x => x * x;
+IntegralCalculator.Func func = x => x * x;
 
 double a = 0; // Початкова точка інтервалу
 double b = 1; // Кінцева точка інтервалу
