@@ -35,7 +35,7 @@ static void DayToDate(DateTime targetDate)//Метод для перевірки
 DateTime Date = new DateTime(2023, 12, 19);
 DayToDate(Date);
 
-//Task 3
+//Task 3 
 static void StrWithDate(string input)//Метод відповідно до 3 завдання
 {
     string[] dateStrings = input.Split(',').Select(s => s.Trim()).ToArray();
